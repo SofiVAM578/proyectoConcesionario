@@ -66,13 +66,40 @@ void Autos_Vendidos();
 void Autos_sin_vender();
 #pragma endregion
 
+#pragma region Funciones
+
+void MenuPrincipal() {
+	int opcion;
+	cout << "_____________________________________________ \n" << endl;
+	cout << "||||          |||| M E N U ||||          ||||" << endl;
+	cout << "||||     |||| P R I N C I P A L ||||     ||||" << endl;
+	cout << "_____________________________________________ \n" << endl;
+	cout << " 1- Agregar" << endl;
+	cout << " 2- Eliminar" << endl;
+	cout << " 3- Mostrar" << endl;
+	cout << " 4- Modificar" << endl;
+	cout << " 5- Estadisticas" << endl;
+	cout << " 6- salir del sistema" << endl;
+	cout << " Opcion: "; cin >> opcion;
+	switch (opcion) {
+	case 1: MenuAgregar(); break;
+	case 2: MenuEliminar(); break;
+	case 3: MenuMostrar(); break;
+	case 4: MenuModificar(); break;
+	case 5: MenuEstadistica(); break;
+	case 6: cout << "Saliendo del sistema . . ." << endl; break;
+	case 0: break;
+	default: cout << "Opcion incorrecta" << endl << endl;
+	}
+}
+
 #pragma region Agregar
 void MenuAgregar() {
 	int opcion1;
-	cout << "_______________ \n " << endl;
+	cout << "_____________________________________________ \n " << endl;
 	cout << "||||     |||| O P C I O N   D E ||||     ||||" << endl;
 	cout << "||||     ||||  R E G I S T R O  ||||     ||||" << endl;
-	cout << "_______________ \n" << endl;
+	cout << "_____________________________________________ \n" << endl;
 
 	cout << " 1- Agregar Cliente" << endl;
 	cout << " 2- Agregar Vendedor" << endl;
@@ -81,17 +108,18 @@ void MenuAgregar() {
 	cout << " Opcion: "; cin >> opcion1;
 
 	switch (opcion1) {
-	case 1: Agregar_Cliente(); MenuAgregar();
-	case 2: Agregar_Cliente(); MenuAgregar();
-	case 3: Agregar_Auto(); MenuAgregar();
+	case 1: Agregar_Cliente(); MenuAgregar(); break;
+	case 2: Agregar_Cliente(); MenuAgregar(); break;
+	case 3: Agregar_Auto(); MenuAgregar(); break;
 	case 4: MenuPrincipal(); break;
 	case 0: break;
 	default: cout << "Opcion incorrecta" << endl << endl;
 	}
 }
+
 void Agregar_Cliente() {
-	ifstream clients_read("clients.csv");
-	ofstream clients_write("clients.csv", ios::app);
+	ifstream clients_read("..\\assets\\clients.csv");
+	ofstream clients_write("..\\assets\\clients.csv", ios::app);
 	int UltimoID = 0;
 	string line;
 	Client Clients;
@@ -102,27 +130,26 @@ void Agregar_Cliente() {
 		string id_str;
 		getline(ss, id_str, ';');
 		Clients.id = stoi(id_str);
-	
+
 		UltimoID = Clients.id;
 	}
 
 	clients_read.close();
 
-	    int SiguienteID = UltimoID + 1;
-		cout << "Nombre: ", cin >> Clients.first_name;
-		cout << "Apellido: "; cin >> Clients.last_name;
-		cout << "Correo electronico: "; cin >> Clients.email;
-		cout << "Edad: "; cin >> Clients.age;
+	int SiguienteID = UltimoID + 1;
+	cout << "Nombre: ", cin >> Clients.first_name;
+	cout << "Apellido: "; cin >> Clients.last_name;
+	cout << "Correo electronico: "; cin >> Clients.email;
+	cout << "Edad: "; cin >> Clients.age;
 
-		clients_write << SiguienteID << ';' << Clients.first_name << ';' << Clients.last_name << ';' << Clients.email << ';' << Clients.age << endl;
-		cout << "Cliente " << Clients.first_name << " " << Clients.last_name << " agregado exitosamente" << endl;
+	clients_write << SiguienteID << ';' << Clients.first_name << ';' << Clients.last_name << ';' << Clients.email << ';' << Clients.age << endl;
+	cout << "Cliente " << Clients.first_name << " " << Clients.last_name << " agregado exitosamente" << endl;
 
 	clients_write.close();
 }
-
 void Agregar_Auto() {
-	ifstream cars_read("cars_data.csv");
-	ofstream cars_write("cars_data.csv", ios::app);
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	ofstream cars_write("..\\assets\\cars_data.csv", ios::app);
 	int UltimoID = 0;
 	string line;
 	Car Cars;
@@ -139,17 +166,18 @@ void Agregar_Auto() {
 
 	cars_read.close();
 
-	    int SiguienteID = UltimoID + 1;
-		cout << "Marca: "; cin >> Cars.maker;
-		cout << "Modelo: "; cin >> Cars.model;
-		cout << "Año: "; cin >> Cars.year;
-		cout << "Vendedor: "; cin >> Cars.bought_to;
-		cout << "Precio - Compra: "; cin >> Cars.bought_for;
+	int SiguienteID = UltimoID + 1;
+	cout << "Marca: "; cin >> Cars.maker;
+	cout << "Modelo: "; cin >> Cars.model;
+	cout << "Año: "; cin >> Cars.year;
+	cout << "Vendedor: "; cin >> Cars.bought_to;
+	cout << "Precio - Compra: "; cin >> Cars.bought_for;
 
-		cars_write << SiguienteID << ';' << Cars.maker << ';' << Cars.model << ';' << Cars.year << ';' << 0 << ';' << Cars.bought_to << ";" << 0 << ';' << Cars.bought_for << endl;
-		cout << "Automovil agregado exitosamente" << endl;
-	
+	cars_write << SiguienteID << ';' << Cars.maker << ';' << Cars.model << ';' << Cars.year << ';' << 0 << ';' << Cars.bought_to << ";" << 0 << ';' << Cars.bought_for << endl;
+	cout << "Automovil agregado exitosamente" << endl;
+
 
 	cars_write.close();
 }
+#pragma endregion
 #pragma endregion
