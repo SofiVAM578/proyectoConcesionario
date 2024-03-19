@@ -119,4 +119,37 @@ void Agregar_Cliente() {
 
 	clients_write.close();
 }
+
+void Agregar_Auto() {
+	ifstream cars_read("cars_data.csv");
+	ofstream cars_write("cars_data.csv", ios::app);
+	int UltimoID = 0;
+	string line;
+	Car Cars;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		string id_str;
+
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		UltimoID = Cars.id;
+	}
+
+	cars_read.close();
+
+	    int SiguienteID = UltimoID + 1;
+		cout << "Marca: "; cin >> Cars.maker;
+		cout << "Modelo: "; cin >> Cars.model;
+		cout << "Año: "; cin >> Cars.year;
+		cout << "Vendedor: "; cin >> Cars.bought_to;
+		cout << "Precio - Compra: "; cin >> Cars.bought_for;
+
+		cars_write << SiguienteID << ';' << Cars.maker << ';' << Cars.model << ';' << Cars.year << ';' << 0 << ';' << Cars.bought_to << ";" << 0 << ';' << Cars.bought_for << endl;
+		cout << "Automovil agregado exitosamente" << endl;
+	
+
+	cars_write.close();
+}
 #pragma endregion
