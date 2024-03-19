@@ -65,3 +65,58 @@ void Autos_Comprados();
 void Autos_Vendidos();
 void Autos_sin_vender();
 #pragma endregion
+
+#pragma region Agregar
+void MenuAgregar() {
+	int opcion1;
+	cout << "_______________ \n " << endl;
+	cout << "||||     |||| O P C I O N   D E ||||     ||||" << endl;
+	cout << "||||     ||||  R E G I S T R O  ||||     ||||" << endl;
+	cout << "_______________ \n" << endl;
+
+	cout << " 1- Agregar Cliente" << endl;
+	cout << " 2- Agregar Vendedor" << endl;
+	cout << " 3- Agregar Vehiculo" << endl;
+	cout << " 4- Menu Principal" << endl;
+	cout << " Opcion: "; cin >> opcion1;
+
+	switch (opcion1) {
+	case 1: Agregar_Cliente(); MenuAgregar();
+	case 2: Agregar_Cliente(); MenuAgregar();
+	case 3: Agregar_Auto(); MenuAgregar();
+	case 4: MenuPrincipal(); break;
+	case 0: break;
+	default: cout << "Opcion incorrecta" << endl << endl;
+	}
+}
+void Agregar_Cliente() {
+	ifstream clients_read("clients.csv");
+	ofstream clients_write("clients.csv", ios::app);
+	int UltimoID = 0;
+	string line;
+	Client Clients;
+	getline(clients_read, line);
+	while (getline(clients_read, line)) {
+		istringstream ss(line);
+		Client Clients;
+		string id_str;
+		getline(ss, id_str, ';');
+		Clients.id = stoi(id_str);
+	
+		UltimoID = Clients.id;
+	}
+
+	clients_read.close();
+
+	    int SiguienteID = UltimoID + 1;
+		cout << "Nombre: ", cin >> Clients.first_name;
+		cout << "Apellido: "; cin >> Clients.last_name;
+		cout << "Correo electronico: "; cin >> Clients.email;
+		cout << "Edad: "; cin >> Clients.age;
+
+		clients_write << SiguienteID << ';' << Clients.first_name << ';' << Clients.last_name << ';' << Clients.email << ';' << Clients.age << endl;
+		cout << "Cliente " << Clients.first_name << " " << Clients.last_name << " agregado exitosamente" << endl;
+
+	clients_write.close();
+}
+#pragma endregion
