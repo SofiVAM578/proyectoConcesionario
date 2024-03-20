@@ -482,6 +482,158 @@ void Mostrar_Auto_x_id() {
 }
 #pragma endregion
 
+#pragma region Modificar
+void MenuModificar() {
+	int opcion1;
+	cout << "_____________________________________________ \n " << endl;
+	cout << "||||     |||| O P C I O N   D E ||||     ||||" << endl;
+	cout << "||||     |||| M O D I F I C A R ||||     ||||" << endl;
+	cout << "_____________________________________________ \n" << endl;
+
+	cout << " 1- Informacion - Auto" << endl;
+	cout << " 2- Informacion - Cliente" << endl;
+	cout << " 3- Menu Principal" << endl;
+	cout << " Opcion: "; cin >> opcion1;
+
+	switch (opcion1) {
+	case 1: Modificar_Auto(); MenuModificar(); break;
+	case 2: Modificar_Cliente(); MenuModificar(); break;
+	case 3: MenuPrincipal(); break;
+	case 0: break;
+	default: cout << "Opcion incorrecta" << endl << endl;
+	}
+}
+void Modificar_Auto() {
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	ofstream cars_write("..\\assets\\cars_data.csv", ios::app);
+	ofstream cars_Temp("..\\assets\\cars_data_temp.csv", ios::in);
+	string line, id_modif;
+	bool existe = false;
+	cout << "Ingrese el id del automovil que desea modificar: "; cin >> id_modif;
+	cars_Temp << Autos << endl;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		string id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+		if (id_modif.compare(id_str) == 0) {
+			existe = true;
+
+			cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+			cout << " ID: " << Cars.id << " MARCA: " << Cars.maker << " MODELO: " << Cars.model << " AO: " << Cars.year << endl;
+			cout << " COMPRADOR: " << Cars.bought_to << endl;
+			cout << " COMPRADO POR: " << Cars.bought_for << endl;
+			cout << " ||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n" << endl;
+			cout << "Ingrese en cuanto fue vendido: " << endl; cin >> Cars.sold_for;
+			cout << "Ingrese el codigo del cliente: " << endl; cin >> Cars.sold_to;
+
+			cars_Temp << Cars.id << ";" << Cars.maker << ";" << Cars.model << ";" << Cars.year << ";" << Cars.sold_to << ";" << Cars.bought_to << ";" << Cars.sold_for << ";" << Cars.bought_for << endl;
+		}
+
+		else {
+			cars_Temp << Cars.id << ";" << Cars.maker << ";" << Cars.model << ";" << Cars.year << ";" << Cars.sold_to << ";" << Cars.bought_to << ";" << Cars.sold_for << ";" << Cars.bought_for << endl;
+		}
+
+	}
+	cars_read.close();
+	cars_Temp.close();
+	cars_write.close();
+
+	if (existe) {
+		remove("..\\assets\\cars_data.csv");
+		cout << "El automovil fue modificado correctamente" << endl;
+		int NowCar = rename("..\\assets\\cars_data_temp.csv", "..\\assets\\cars_data.csv");
+		if (NowCar == 0) {
+			ofstream Nuevo("..\\assets\\cars_data_temp.csv");
+		}
+		else {
+			cout << "Hubo un fallo en la insercion de los registros" << endl;
+		}
+	}
+	else {
+		cout << "Auto con el ID: " << id_modif << " no existe en los registros" << endl;
+	}
+}
+void Modificar_Cliente() {
+
+	ifstream clients_read("..\\assets\\clients.csv");
+	ofstream clients_write("..\\assets\\clients.csv", ios::app);
+	ofstream clients_Temp("..\\assets\\clients_temp.csv", ios::in);
+	string line, id_modif;
+	bool existe = false;
+
+	cout << "Ingrese el id del cliente que desea modificar: "; cin >> id_modif;
+	clients_Temp << Clientes << endl;
+	getline(clients_read, line);
+	while (getline(clients_read, line)) {
+		istringstream ss(line);
+		Client Clients;
+		string id_str, age_str;
+		getline(ss, id_str, ';');
+		Clients.id = stoi(id_str);
+		getline(ss, Clients.first_name, ';');
+		getline(ss, Clients.last_name, ';');
+		getline(ss, Clients.email, ';');
+		getline(ss, age_str, ';');
+		Clients.age = stoi(age_str);
+
+		if (id_modif.compare(id_str) == 0) {
+			existe = true;
+
+			cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+			cout << " ID: " << Clients.id << " EDAD: " << Clients.age << endl;
+			cout << " ||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n" << endl;
+
+			cout << "Ingrese el nombre: " << endl; cin >> Clients.first_name;
+			cout << "Ingrese el apellido: " << endl; cin >> Clients.last_name;
+			cout << "Ingrese el correo: " << endl; cin >> Clients.email;
+
+			clients_Temp << Clients.id << ";" << Clients.first_name << ";" << Clients.last_name << ";" << Clients.email << ";" << Clients.age << endl;
+		}
+
+		else {
+			clients_Temp << Clients.id << ";" << Clients.first_name << ";" << Clients.last_name << ";" << Clients.email << ";" << Clients.age << endl;
+		}
+	}
+
+	clients_read.close();
+	clients_Temp.close();
+	clients_write.close();
+
+	if (existe) {
+		remove("..\\assets\\clients.csv");
+		cout << "El cliente fue modificado correctamente" << endl;
+		int NowCar = rename("..\\assets\\clients_temp.csv", "..\\assets\\clients.csv");
+		if (NowCar == 0) {
+			ofstream Nuevo("..\\assets\\clients_temp.csv");
+		}
+		else {
+			cout << "Hubo un fallo en la insercion de los registros" << endl;
+		}
+	}
+	else {
+		cout << "El cliente con el ID: " << id_modif << " no existe en los registros" << endl;
+	}
+
+}
+#pragma endregion
+
 int main() {
     MenuPrincipal();
 }
