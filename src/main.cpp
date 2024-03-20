@@ -634,6 +634,204 @@ void Modificar_Cliente() {
 }
 #pragma endregion
 
+void MenuEstadistica() {
+	int opcion1;
+	cout << "_____________________________________________ \n " << endl;
+	cout << "||||     |||| O P C I O N   D E ||||     ||||" << endl;
+	cout << "||||   |||| E S T A D I S T I C A ||||   ||||" << endl;
+	cout << "_____________________________________________ \n" << endl;
+
+	cout << " 1- Estadistica General" << endl;
+	cout << " 2- Autos Comprados" << endl;
+	cout << " 3- Autos Vendidos" << endl;
+	cout << " 4- Autos Sin vender" << endl;
+	cout << " 5- Menu Principal" << endl;
+	cout << " Opcion: "; cin >> opcion1;
+
+	switch (opcion1) {
+	case 1: Estadistica_General(); MenuEstadistica(); break;
+	case 2: Autos_Comprados(); MenuEstadistica(); break;
+	case 3: Autos_Vendidos(); MenuEstadistica(); break;
+	case 4: Autos_sin_vender(); MenuEstadistica(); break;
+	case 5: MenuPrincipal(); break;
+	case 0: break;
+	default: cout << "Opcion incorrecta" << endl << endl;
+	}
+}
+void Estadistica_General() {
+	int autos_Vendidos = 0;
+	int autos_Perdida = 0;
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	string line, id_auto, registro, id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+		if (sold_for_str.compare("0") == 0) {
+			autos_Perdida++;
+		}
+		else {
+			autos_Vendidos++;
+		}
+	}
+	cout << " ____________________________________________\n" << endl;
+	cout << " | Stock Autos - Comprados ________> " << autos_Perdida + autos_Vendidos << endl;
+	cout << " | Autos con registro de venta ____> " << autos_Vendidos << endl;
+	cout << " | Autos sin registro de venta ____> " << autos_Perdida << endl;
+	cout << " ____________________________________________" << endl;
+	cars_read.close();
+	cars_read.open("..\\assets\\cars_data.csv");
+}
+void Autos_Comprados() {
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	string line;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		string id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+		cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+		cout << " ID: " << Cars.id << " MARCA: " << Cars.maker << " MODELO: " << Cars.model << " AÑO: " << Cars.year << endl;
+		cout << " VENDEDOR: " << Cars.sold_to << " COMPRADOR: " << Cars.bought_to << endl;
+		cout << " VENDIDO POR: " << Cars.sold_for << " COMPRADO POR: " << Cars.bought_for;
+		int vendido = Cars.sold_for;
+		int comprado = Cars.bought_for;
+		int Dif = comprado - vendido;
+		if (vendido < comprado) {
+			cout << " GANANCIA: " << Dif << endl;
+		}
+		else {
+			cout << " PERDIDA: " << Dif << endl;
+		}
+		cout << " ||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n" << endl;
+	}
+	cars_read.close();
+	cars_read.open("..\\assets\\cars_data.csv");
+}
+void Autos_Vendidos() {
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	string line;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		string id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+
+		if (sold_for_str.compare("0") != 0)
+		{
+			cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+			cout << " ID: " << Cars.id << " MARCA: " << Cars.maker << " MODELO: " << Cars.model << " A�O: " << Cars.year << endl;
+			cout << " VENDEDOR: " << Cars.sold_to << " COMPRADOR: " << Cars.bought_to << endl;
+			cout << " VENDIDO POR: " << Cars.sold_for << " COMPRADO POR: " << Cars.bought_for;
+			int vendido = Cars.sold_for;
+			int comprado = Cars.bought_for;
+			int Dif = comprado - vendido;
+			if (vendido < comprado) {
+				cout << " GANANCIA: " << Dif << endl;
+			}
+			else {
+				cout << " PERDIDA: " << Dif << endl;
+			}
+			cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+		}
+	}
+
+	cars_read.close();
+	cars_read.open("..\\assets\\cars_data.csv");
+}
+void Autos_sin_vender() {
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	string line;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		string id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+
+		if (sold_for_str.compare("0") == 0)
+		{
+			cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+			cout << " ID: " << Cars.id << " MARCA: " << Cars.maker << " MODELO: " << Cars.model << " AñO: " << Cars.year << endl;
+			cout << " VENDEDOR: " << Cars.sold_to << " COMPRADOR: " << Cars.bought_to << endl;
+			cout << " VENDIDO POR: " << Cars.sold_for << " COMPRADO POR: " << Cars.bought_for;
+			int vendido = Cars.sold_for;
+			int comprado = Cars.bought_for;
+			int Dif = comprado - vendido;
+			if (vendido < comprado) {
+				cout << " GANANCIA: " << Dif << endl;
+			}
+			else {
+				cout << " PERDIDA: " << Dif << endl;
+			}
+			cout << " ||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n" << endl;
+		}
+	}
+
+	cars_read.close();
+	cars_read.open("..\\assets\\cars_data.csv");
+}
+#pragma endregion
+
 int main() {
     MenuPrincipal();
 }
