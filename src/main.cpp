@@ -305,6 +305,183 @@ void Eliminar_Auto() {
 }
 #pragma endregion
 
+#pragma region Mostrar
+void MenuMostrar() {
+	int opcion1;
+	cout << "_____________________________________________ \n " << endl;
+	cout << "||||     |||| O P C I O N   D E ||||     ||||" << endl;
+	cout << "||||       |||| M O S T R A R ||||       ||||" << endl;
+	cout << "_____________________________________________ \n" << endl;
+
+	cout << " 1- Listado de Clientes" << endl;
+	cout << " 2- Listado de Autos" << endl;
+	cout << " 3- Busqueda de cliente por ID" << endl;
+	cout << " 4- Busqueda de auto por ID" << endl;
+	cout << " 5- Menu Principal" << endl;
+	cout << " Opcion: "; cin >> opcion1;
+
+	switch (opcion1) {
+	case 1: Mostrar_Clientes(); MenuMostrar(); break;
+	case 2: Mostrar_Autos(); MenuMostrar(); break;
+	case 3: Mostrar_Cliente_x_id(); MenuMostrar(); break;
+	case 4: Mostrar_Auto_x_id(); MenuMostrar(); break;
+	case 5: MenuPrincipal(); break;
+	case 0: break;
+	default: cout << "Opcion incorrecta" << endl << endl;
+	}
+}
+void Mostrar_Clientes() {
+	string FileName = "..\\assets\\clients.csv";
+	ifstream clients_read(FileName);
+	string line;
+	getline(clients_read, line);
+	while (getline(clients_read, line)) {
+		istringstream ss(line);
+		Client Clients;
+		string id_str, age_str;
+		getline(ss, id_str, ';');
+		Clients.id = stoi(id_str);
+		getline(ss, Clients.first_name, ';');
+		getline(ss, Clients.last_name, ';');
+		getline(ss, Clients.email, ';');
+		getline(ss, age_str, ';');
+		Clients.age = stoi(age_str);
+
+		cout << " ID________ " << Clients.id << endl;
+		cout << " NOMBRES / APELLIDOS___ " << Clients.first_name << " " << Clients.last_name << endl;
+		cout << " EMAIL_______ " << Clients.email << endl;
+		cout << " AGE_______ " << Clients.age << endl;
+		cout << " _________________________________________________________________________ \n" << endl;
+	}
+
+	clients_read.close();
+	clients_read.open("..\\assets\\clients.csv");
+}
+void Mostrar_Autos() {
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	string line;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		string id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+
+		cout << " ID: " << Cars.id << " MARCA: " << Cars.maker << " MODELO: " << Cars.model << " AÑO: " << Cars.year << endl;
+		cout << " VENDEDOR: " << Cars.sold_to << " COMPRADOR: " << Cars.bought_to << endl;
+		cout << " VENDIDO POR: " << Cars.sold_for << " COMPRADO POR: " << Cars.bought_for;
+		int vendido = Cars.sold_for;
+		int comprado = Cars.bought_for;
+		int Dif = vendido - comprado;
+		if (vendido < comprado) {
+			cout << " PERDIDA: " << Dif << endl;
+		}
+		else {
+			cout << " GANANCIA: " << Dif << endl;
+		}
+		cout << " ______________________________________________________________ \n" << endl;
+	}
+	cars_read.close();
+	cars_read.open("..\\assets\\cars_data.csv");
+}
+void Mostrar_Cliente_x_id() {
+	ifstream clients_read("..\\assets\\clients.csv");
+	string line, id_client, id_str, age_str;
+	bool existe = false;
+	cout << " Ingrese el ID del cliente que desea consultar: "; cin >> id_client;
+	getline(clients_read, line);
+	while (getline(clients_read, line)) {
+		istringstream ss(line);
+		Client Clients;
+		getline(ss, id_str, ';');
+		Clients.id = stoi(id_str);
+		getline(ss, Clients.first_name, ';');
+		getline(ss, Clients.last_name, ';');
+		getline(ss, Clients.email, ';');
+		getline(ss, age_str, ';');
+		Clients.age = stoi(age_str);
+
+		if (id_client.compare(id_str) == 0) {
+			existe = true;
+			cout << " \n |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+			cout << " ID________ " << Clients.id << endl;
+			cout << " NOMBRES / APELLIDOS___ " << Clients.first_name << " " << Clients.last_name << endl;
+			cout << " EMAIL_______ " << Clients.email << endl;
+			cout << " AGE_______ " << Clients.age << endl;
+			cout << " |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+		}
+	}
+	clients_read.close();
+	clients_read.open("..\\assets\\clients.csv");
+	if (!existe) {
+		cout << "ID:" << id_client << " no encontrado";
+	}
+}
+void Mostrar_Auto_x_id() {
+	ifstream cars_read("..\\assets\\cars_data.csv");
+	string line, id_auto, registro, id_str, year_str, sold_to_str, sold_for_str, bought_to_str, bought_for_str;
+	bool existe = false;
+	cout << " Ingrese el ID del auto que desea consultar: "; cin >> id_auto;
+	getline(cars_read, line);
+	while (getline(cars_read, line)) {
+		istringstream ss(line);
+		Car Cars;
+		getline(ss, id_str, ';');
+		Cars.id = stoi(id_str);
+		getline(ss, Cars.maker, ';');
+		getline(ss, Cars.model, ';');
+		getline(ss, year_str, ';');
+		Cars.year = stoi(year_str);
+		getline(ss, sold_to_str, ';');
+		Cars.sold_to = stoi(sold_to_str);
+		getline(ss, bought_to_str, ';');
+		Cars.bought_to = stoi(bought_to_str);
+		getline(ss, sold_for_str, ';');
+		Cars.sold_for = stoi(sold_for_str);
+		getline(ss, bought_for_str, ';');
+		Cars.bought_for = stoi(bought_for_str);
+
+		if (id_auto.compare(id_str) == 0) {
+			existe = true;
+			cout << " \n |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+			cout << " ID: " << Cars.id << " MARCA: " << Cars.maker << " MODELO: " << Cars.model << " AÑO: " << Cars.year << endl;
+			cout << " VENDEDOR: " << Cars.sold_to << " COMPRADOR: " << Cars.bought_to << endl;
+			cout << " VENDIDO POR: " << Cars.sold_for << " COMPRADO POR: " << Cars.bought_for;
+			int vendido = Cars.sold_for;
+			int comprado = Cars.bought_for;
+			int Dif = vendido - comprado;
+			if (vendido < comprado) {
+				cout << " PERDIDA: " << Dif << endl;
+			}
+			else {
+				cout << " GANANCIA: " << Dif << endl;
+			}
+			cout << " ||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n" << endl;
+		}
+
+	}
+	cars_read.close();
+	cars_read.open("..\\assets\\cars_data.csv");
+	if (!existe) {
+		cout << "ID: " << id_auto << " no encontrado" << endl;
+	}
+}
+#pragma endregion
+
 int main() {
     MenuPrincipal();
 }
