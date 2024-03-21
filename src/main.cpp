@@ -728,7 +728,7 @@ void Autos_Comprados() {
 		int vendido = Cars.sold_for;
 		int comprado = Cars.bought_for;
 		int Dif = comprado - vendido;
-		if (vendido < comprado) {
+		if (vendido > comprado) {
 			cout << " GANANCIA: " << Dif << endl;
 		}
 		else {
@@ -772,7 +772,7 @@ void Autos_Vendidos() {
 			int vendido = Cars.sold_for;
 			int comprado = Cars.bought_for;
 			int Dif = comprado - vendido;
-			if (vendido < comprado) {
+			if (vendido > comprado) {
 				cout << " GANANCIA: " << Dif << endl;
 			}
 			else {
@@ -818,7 +818,7 @@ void Autos_sin_vender() {
 			int vendido = Cars.sold_for;
 			int comprado = Cars.bought_for;
 			int Dif = comprado - vendido;
-			if (vendido < comprado) {
+			if (vendido > comprado) {
 				cout << " GANANCIA: " << Dif << endl;
 			}
 			else {
