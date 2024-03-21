@@ -634,6 +634,7 @@ void Modificar_Cliente() {
 }
 #pragma endregion
 
+#pragma region Estadistica
 void MenuEstadistica() {
 	int opcion1;
 	cout << "_____________________________________________ \n " << endl;
