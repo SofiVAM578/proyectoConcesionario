@@ -589,7 +589,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 588;Ford;Escort ZX2;2003;57;89;24921;7114
 589;Chevrolet;Avalanche 2500;2004;93;29;2131;7719
 590;Chevrolet;SSR;2006;36;68;22707;2281
-591;Lamborghini;Murciélago;2008;79;45;23477;3598
+591;Lamborghini;Murciï¿½lago;2008;79;45;23477;3598
 592;Isuzu;VehiCROSS;2001;26;21;7032;5329
 593;Chevrolet;Suburban 2500;1994;6;2;1038;4621
 594;Lexus;RX;2012;83;26;15437;889
@@ -998,4 +998,4 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 997;Ford;GT;2006;98;85;10960;6967
 998;Dodge;Daytona;1984;53;90;23494;6996
 999;Buick;Riviera;1986;70;7;29270;1168
-1001;luis;alvarez;2005;2;1;1001;100
+1000;Mitsubishi;Truck;1991;83;91;23170;3700

@@ -1,4 +1,5 @@
 id; firt_name; last_name; email; age
+1;Joell;Rickertsen;jrickertsen0@i2i.jp;51
 2;Glynnis;Pavic;gpavic1@cloudflare.com;42
 3;Merrili;Pencot;mpencot2@bigcartel.com;66
 4;Napoleon;McGebenay;nmcgebenay3@example.com;64
@@ -97,6 +98,5 @@ id; firt_name; last_name; email; age
 97;Margalo;O'Criane;mocriane2o@imgur.com;62
 98;Faina;Griffith;fgriffith2p@blogtalkradio.com;58
 99;Rodrick;Jerger;rjerger2q@walmart.com;34
-101;luis;alvarez;x;18
-102;luis;luis;luis;15
-103;paola;alvarez;pao03;18
+100;Otha;Bruneau;obruneau2r@imgur.com;58
+101;randa;singh;randasvic;19
