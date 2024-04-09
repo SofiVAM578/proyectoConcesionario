@@ -77,9 +77,282 @@ public:
  }
 };
 
+class AutoView {
+public:
+void mostrar_registros_csv(string filename) {
+		try {
+			ifstream file(filename);
+			string line;
+			cout << " LISTADO DE AUTOS:" << endl;
+			getline(file, line);
+			while (getline(file, line)) {
+				stringstream ss(line);
+				string id, marca, modelo, año, vendedor, comprador, vendido, comprado;
+
+				getline(ss, id, ';');
+				int current_id = stoi(id);
+				getline(ss, marca, ';');
+				getline(ss, modelo, ';');
+				getline(ss, año, ';');
+				int current_año = stoi(año);
+				getline(ss, vendedor, ';');
+				int current_vendedor = stoi(vendedor);
+				getline(ss, comprador, ';');
+				int current_comprador = stoi(comprador);
+				getline(ss, vendido, ';');
+				int current_vendido = stoi(vendido);
+				getline(ss, comprado, ';');
+				int current_comprado = stoi(comprado);
+
+				cout << " \n |||||||||||||||||||||||||||||||||||||||||||||||||||||||" << endl;
+				cout << " ID: " << current_id << " MARCA: " << marca << " MODELO: " << modelo << " AÑO: " << current_año << endl;
+				cout << " VENDEDOR: " << current_vendedor << " COMPRADOR: " << current_comprador << endl;
+				cout << " VENDIDO POR: " << current_vendido << " COMPRADO POR: " << current_comprado;
+				int Dif = current_vendido - current_comprado;
+				if (current_vendido < current_comprado) {
+					cout << " PERDIDA: " << Dif << endl;
+				}
+				else {
+					cout << " GANANCIA: " << Dif << endl;
+				}
+				cout << " ||||||||||||||||||||||||||||||||||||||||||||||||||||||| \n" << endl;
+			}
+			file.close();
+		}
+		catch (const exception& e) {
+			cout << " Error al mostrar los registros del archivo CSV: " << e.what() << endl;
+		}
+	}
+
+void mostrar_x_id_csv(string filename, string id_auto) {
+		try {
+			ifstream file(filename);
+			string line;
+			string id, marca, modelo, año, vendedor, comprador, vendido, comprado;
+			bool existe = false;
+			getline(file, line);
+			while (getline(file, line)) {
+				stringstream ss(line);
+				
+				getline(ss, id, ';');
+				int current_id = stoi(id);
+				getline(ss, marca, ';');
+				getline(ss, modelo, ';');
+				getline(ss, año, ';');
+				int current_año = stoi(año);
+				getline(ss, vendedor, ';');
+				int current_vendedor = stoi(vendedor);
+				getline(ss, comprador, ';');
+				int current_comprador = stoi(comprador);
+				getline(ss, vendido, ';');
+				int current_vendido = stoi(vendido);
+				getline(ss, comprado, ';');
+				int current_comprado = stoi(comprado);
+
+				if (id_auto.compare(id) == 0) {
+				existe = true;
+				cout << " \n ______________________________________________________ \n" << endl;
+				cout << " ID____________________ " << current_id << endl;
+				cout << " MARCA / MODELO________ " << marca << " " << modelo << endl;
+				cout << " AÑO___________________ " << año << endl;
+				cout << " VENDENDOR_____________ " << current_vendedor << endl;
+				cout << " COMPRADOR_____________ " << current_comprador << endl;
+				cout << " VENDIDO EN____________ " << current_vendido << endl;
+				cout << " COMPRADO POR__________ " << current_comprado << endl;
+				int Dif= current_vendido-current_comprado;
+				if (vendido < comprado){
+					cout << " PERDIDA: " << Dif << endl;
+				}
+				else{
+					cout << " GANANCIA: " << Dif << endl;
+				}
+				
+				cout << " ______________________________________________________ \n" << endl;
+}
+				
+			}
+			file.close();
+		}
+		catch (const exception& e) {
+			cout << " Error al mostrar los registros del archivo CSV: " << e.what() << endl;
+		}
+		
+	}
+	
+void stock(string filename){
+		try {
+			ifstream file(filename);
+			string line;
+			string id, marca, modelo, año, vendedor, comprador, vendido, comprado;
+			bool existe = false;
+			int autos_Vendidos = 0;
+			int autos_Perdida = 0;
+			getline(file, line);
+			while (getline(file, line)) {
+				stringstream ss(line);
+				
+				getline(ss, id, ';');
+				int current_id = stoi(id);
+				getline(ss, marca, ';');
+				getline(ss, modelo, ';');
+				getline(ss, año, ';');
+				int current_año = stoi(año);
+				getline(ss, vendedor, ';');
+				int current_vendedor = stoi(vendedor);
+				getline(ss, comprador, ';');
+				int current_comprador = stoi(comprador);
+				getline(ss, vendido, ';');
+				int current_vendido = stoi(vendido);
+				getline(ss, comprado, ';');
+				int current_comprado = stoi(comprado);
+
+				if (current_vendido != 0) {
+					autos_Vendidos++;
+				}
+				
+				else{
+					autos_Perdida++;
+				}
+				
+				}
+				cout << " ____________________________________________\n" << endl;
+				cout << " | Stock Autos - Comprados ________> " << autos_Perdida + autos_Vendidos << endl;
+				cout << " | Autos con registro de venta ____> " << autos_Vendidos << endl;
+				cout << " | Autos sin registro de venta ____> " << autos_Perdida << endl;
+				cout << " ____________________________________________" << endl;
+				file.close();
+
+			}
+			catch (const exception& e) {
+			cout << " Error al mostrar los registros del archivo CSV: " << e.what() << endl;
+		}
+
+		}
+
+void sinverder(string filename){
+		try {
+			ifstream file(filename);
+			string line;
+			string id, marca, modelo, año, vendedor, comprador, vendido, comprado;
+			bool existe = false;
+			int autos_sinvender = 0;
+			getline(file, line);
+			while (getline(file, line)) {
+				stringstream ss(line);
+				
+				getline(ss, id, ';');
+				int current_id = stoi(id);
+				getline(ss, marca, ';');
+				getline(ss, modelo, ';');
+				getline(ss, año, ';');
+				int current_año = stoi(año);
+				getline(ss, vendedor, ';');
+				int current_vendedor = stoi(vendedor);
+				getline(ss, comprador, ';');
+				int current_comprador = stoi(comprador);
+				getline(ss, vendido, ';');
+				int current_vendido = stoi(vendido);
+				getline(ss, comprado, ';');
+				int current_comprado = stoi(comprado);
+
+				if (current_vendido = 0) {
+				autos_sinvender++;
+				cout << " \n ______________________________________________________ \n" << endl;
+				cout << " ID____________________ " << current_id << endl;
+				cout << " MARCA / MODELO________ " << marca << " " << modelo << endl;
+				cout << " AÑO___________________ " << año << endl;
+				cout << " VENDENDOR_____________ " << current_vendedor << endl;
+				cout << " COMPRADOR_____________ " << current_comprador << endl;
+				cout << " VENDIDO EN____________ " << current_vendido << endl;
+				cout << " COMPRADO POR__________ " << current_comprado << endl;
+				int Dif= current_vendido-current_comprado;
+				if (vendido < comprado){
+					cout << " PERDIDA: " << Dif << endl;
+				}
+				else{
+					cout << " GANANCIA: " << Dif << endl;
+				}
+				
+				cout << " ______________________________________________________ \n" << endl;
+				}
+				
+				
+				}
+				cout << " CANTIDAD TOTAL DE AUTOS SIN VENDER " <<autos_sinvender <<endl;
+				
+				file.close();
+
+			}
+			catch (const exception& e) {
+			cout << " Error al mostrar los registros del archivo CSV: " << e.what() << endl;
+		}
+
+	}
+
+void vendido(string filename){
+		try {
+			ifstream file(filename);
+			string line;
+			string id, marca, modelo, año, vendedor, comprador, vendido, comprado;
+			bool existe = false;
+			int autos_vendidos = 0;
+			getline(file, line);
+			while (getline(file, line)) {
+				stringstream ss(line);
+				
+				getline(ss, id, ';');
+				int current_id = stoi(id);
+				getline(ss, marca, ';');
+				getline(ss, modelo, ';');
+				getline(ss, año, ';');
+				int current_año = stoi(año);
+				getline(ss, vendedor, ';');
+				int current_vendedor = stoi(vendedor);
+				getline(ss, comprador, ';');
+				int current_comprador = stoi(comprador);
+				getline(ss, vendido, ';');
+				int current_vendido = stoi(vendido);
+				getline(ss, comprado, ';');
+				int current_comprado = stoi(comprado);
+
+				if (current_vendido != 0) {
+				autos_vendidos++;
+				cout << " \n ______________________________________________________ \n" << endl;
+				cout << " ID____________________ " << current_id << endl;
+				cout << " MARCA / MODELO________ " << marca << " " << modelo << endl;
+				cout << " AÑO___________________ " << año << endl;
+				cout << " VENDENDOR_____________ " << current_vendedor << endl;
+				cout << " COMPRADOR_____________ " << current_comprador << endl;
+				cout << " VENDIDO EN____________ " << current_vendido << endl;
+				cout << " COMPRADO POR__________ " << current_comprado << endl;
+				int Dif= current_vendido-current_comprado;
+				if (vendido < comprado){
+					cout << " PERDIDA: " << Dif << endl;
+				}
+				else{
+					cout << " GANANCIA: " << Dif << endl;
+				}
+				
+				cout << " ______________________________________________________ \n" << endl;
+				}
+				
+				}
+				cout << " CANTIDAD TOTAL DE AUTOS VENDIDOS " <<autos_vendidos <<endl;
+				
+				file.close();
+
+			}
+			catch (const exception& e) {
+			cout << " Error al mostrar los registros del archivo CSV: " << e.what() << endl;
+		}
+
+	}
+
+};
+
 class EstadisticaView{
  public:
- void compraventa_x_cliente(string filename_Cliente, string filename_Auto){
+void compraventa_x_cliente(string filename_Cliente, string filename_Auto){
 
   try {
    ifstream file_cliente(filename_Cliente);
@@ -214,7 +487,7 @@ class EstadisticaView{
 
  }
 
-    void cliente_vendedor_Xauto(string filename_Cliente, string filename_Auto){
+void cliente_vendedor_Xauto(string filename_Cliente, string filename_Auto){
  try {
    ifstream file_auto(filename_Auto);
    string line1, line2, line3;
