@@ -1,104 +1,8 @@
-id; maker; model; year; sold_to; bought_to; sold_for; bought_for 
-1;Dodge;Nitro;2011;14;63;16416;5456
-2;Mitsubishi;Endeavor;2006;46;72;24761;953
-3;Chevrolet;TrailBlazer;2006;43;53;29194;7977
-4;Nissan;350Z;2004;50;73;25778;3011
-5;Ford;Taurus X;2008;76;7;29579;8231
-6;Ford;Explorer;2011;44;5;25043;6727
-7;Honda;S2000;2002;65;28;6394;3036
-8;Scion;xD;2011;8;75;2184;7279
-9;Jaguar;S-Type;2002;20;65;25422;6835
-10;Volkswagen;Touareg 2;2008;43;5;15838;5189
-11;Nissan;NX;1993;54;51;16172;6230
-12;Pontiac;G8;2009;22;53;7495;8030
-13;Aston Martin;DB9;2007;47;90;9212;7707
-14;Ford;Focus;2003;5;88;17512;8622
-15;Ford;F-Series Super Duty;2010;59;64;16102;9119
-16;GMC;Safari;1995;21;89;22909;870
-17;Porsche;911;2011;8;82;12825;7616
-18;Mitsubishi;Eclipse;1999;73;1;11106;8814
-19;Ford;F150;2010;32;75;2045;1560
-20;Toyota;Land Cruiser;2001;77;48;28424;4645
-21;Mazda;MX-5;2011;81;7;17769;4166
-22;Ford;F-Series;1989;99;78;16830;5871
-23;Mercedes-Benz;C-Class;2008;95;23;12215;7970
-24;Nissan;Pathfinder;1992;72;30;6258;8932
-25;Cadillac;Escalade EXT;2005;73;97;10056;5464
-26;Toyota;FJ Cruiser;2010;76;96;24970;9423
-27;GMC;Yukon XL 1500;2001;28;83;10561;6784
-28;Toyota;Tundra;2010;76;29;24680;8403
-29;Audi;R8;2008;88;11;19923;9027
-30;Infiniti;J;1996;33;81;23460;8597
-31;Pontiac;Grand Am;2003;30;94;27584;4235
-32;Chrysler;Town & Country;2001;18;71;18953;4031
-33;Cadillac;Escalade ESV;2010;1;5;11692;3292
-34;Dodge;Dakota;2004;74;3;3312;5475
-35;Chevrolet;G-Series 2500;1998;41;18;25831;4503
-36;Nissan;Pathfinder;2008;8;8;20283;7472
-37;GMC;Vandura 1500;1994;22;21;22603;3923
-38;Lotus;Elan;1993;73;79;11231;1880
-39;GMC;Sierra 2500;2008;37;14;9620;3557
-40;Ford;F250;2007;7;59;12387;8684
-41;Toyota;Corolla;2004;80;66;20963;5862
-42;Mazda;Mazda5;2008;67;90;18701;4439
-43;Mercedes-Benz;SL-Class;2000;58;57;9554;8715
-44;Bentley;Continental GT;2008;25;45;6182;888
-45;Mercury;Villager;1998;89;56;24391;2161
-46;Porsche;928;1990;24;89;17628;7834
-47;Plymouth;Breeze;2000;53;26;26191;8038
-48;Infiniti;FX;2010;34;65;23782;1463
-49;Acura;RL;1997;16;66;9297;977
-50;Hyundai;Genesis;2012;60;66;20449;6978
-51;GMC;Canyon;2010;46;63;18395;2820
-52;Honda;FCX Clarity;2012;97;5;17522;4713
-53;Kia;Sportage;2012;87;19;12969;5688
-54;Ford;Escort;1984;6;96;27995;1423
-55;Chevrolet;Tahoe;2004;88;37;22241;1332
-56;Land Rover;Discovery Series II;2002;91;27;20322;4227
-57;Ford;Courier;1989;58;79;29764;5336
-58;Chevrolet;G-Series G10;1993;72;64;13503;5046
-59;BMW;7 Series;2000;78;21;14517;761
-60;Scion;xA;2006;55;97;2804;3103
-61;Pontiac;Firebird;1989;46;80;10481;6633
-62;Chevrolet;Camaro;1979;3;97;2769;9048
-63;Toyota;Celica;2004;84;18;22859;9284
-64;Chevrolet;Corsica;1992;98;29;9821;4274
-65;Mercedes-Benz;E-Class;2002;36;33;3433;6724
-66;Mercury;Mystique;1997;76;92;17085;8155
-67;Lexus;SC;2007;21;9;9134;9326
-68;Mazda;Mazda6;2008;97;28;16451;4651
-69;Lincoln;Continental;1996;61;2;6422;2639
-70;Ford;Club Wagon;1995;3;36;4198;6134
-71;Audi;A6;2008;22;82;6004;1130
-72;Infiniti;QX56;2011;69;69;19330;8097
-73;Ford;Aerostar;1990;19;8;22489;6846
-74;Volvo;S80;2009;2;67;28680;4444
-75;Buick;Coachbuilder;1990;18;68;26586;1664
-76;Chevrolet;Corvette;1967;22;38;13420;6741
-77;Porsche;911;1992;84;77;9549;8799
-78;Toyota;Tacoma Xtra;2004;37;73;28559;4533
-79;Kia;Optima;2006;99;44;11007;2587
-80;Maserati;Quattroporte;1984;8;79;4073;964
-81;Subaru;Legacy;1993;89;81;18293;8043
-82;Chrysler;Town & Country;1996;74;63;9725;5570
-83;Toyota;Sequoia;2006;20;72;19106;6873
-84;Infiniti;G;2002;66;36;14058;3938
-85;Lotus;Elise;2008;10;54;5901;8297
-86;Ram;C/V;2012;39;28;17650;9749
-87;Scion;xD;2008;70;29;14712;5961
-88;Corbin;Sparrow;1999;100;67;11119;5090
-89;Chevrolet;Cobalt;2008;36;91;17559;5976
-90;Pontiac;Sunbird;1984;4;86;12042;2307
-91;Chrysler;Town & Country;2008;36;62;27883;1488
-92;Mitsubishi;Galant;1987;72;5;16063;6267
-93;Dodge;Intrepid;1995;99;38;27196;6253
-94;Audi;A6;2010;56;16;16543;4520
-95;Land Rover;Range Rover;1999;49;77;21431;8239
-96;Ford;Windstar;1996;66;100;13394;2729
-97;Cadillac;SRX;2012;92;22;21015;3333
-98;Ford;Thunderbird;1995;61;84;1496;3936
-99;Audi;S5;2011;8;67;22009;7299
+id;marca;modelo;año;vendedor;comprador;vendido;comprado
+10;Volkswagen;Touareg 2;2008;19;28;1600;5189
 100;Chrysler;Town & Country;1999;18;94;18852;5028
+1000;Mitsubishi;Truck;1991;19;18;2600;3700
+1001;toyota;corola;2005;0;0;0;2000
 101;Chevrolet;Impala;2005;86;84;23192;9416
 102;Toyota;Paseo;1995;75;65;7083;3236
 103;Ford;Mustang;1983;68;47;18451;3482
@@ -108,6 +12,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 107;BMW;5 Series;1997;65;68;16789;1056
 108;Infiniti;Q;1992;13;96;10727;5494
 109;Ford;Tempo;1990;73;11;6370;1151
+11;Nissan;NX;1993;54;51;16172;6230
 110;Volkswagen;Golf;2011;20;45;9222;5319
 111;Mitsubishi;Truck;1989;42;18;2434;8466
 112;Mercedes-Benz;C-Class;2007;27;66;29415;2188
@@ -118,6 +23,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 117;Volkswagen;Quantum;1984;78;64;12523;9262
 118;Audi;S8;2003;90;61;4295;8027
 119;Mercedes-Benz;500SEL;1993;92;90;16131;879
+12;Pontiac;G8;2009;22;53;7495;8030
 120;Ford;Laser;1986;96;12;3637;3575
 121;Honda;Civic;1985;100;84;26845;2443
 122;Audi;Coupe Quattro;1991;13;41;24660;5058
@@ -128,6 +34,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 127;Plymouth;Colt;1992;94;40;19703;4197
 128;Volkswagen;Golf;1989;76;15;21559;1816
 129;Toyota;Prius;2001;70;75;19896;3136
+13;Aston Martin;DB9;2007;47;90;9212;7707
 130;Jeep;Grand Cherokee;1995;64;80;14789;2694
 131;Mazda;MPV;1991;92;54;6350;1197
 132;Bentley;Continental Flying Spur;2011;24;89;14118;5740
@@ -138,6 +45,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 137;Hyundai;Sonata;2009;23;16;24867;8944
 138;Chrysler;LHS;1997;37;58;11751;4578
 139;Toyota;Avalon;1999;77;47;7694;8817
+14;Ford;Focus;2003;5;88;17512;8622
 140;Cadillac;Escalade;2011;58;28;7154;2595
 141;Cadillac;CTS;2012;77;54;22766;2163
 142;Ford;Ranger;1989;99;64;21693;5710
@@ -148,6 +56,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 147;Chevrolet;Cavalier;1996;47;44;12679;6934
 148;GMC;Yukon XL 2500;2005;52;77;16584;8118
 149;Foose;Hemisfear;2007;53;19;7016;9575
+15;Ford;F-Series Super Duty;2010;59;64;16102;9119
 150;Maybach;57;2011;76;67;18402;2701
 151;GMC;3500;1999;61;55;27774;1150
 152;Hyundai;XG300;2001;63;28;4814;9967
@@ -158,6 +67,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 157;Chevrolet;Malibu;2006;1;74;23781;2133
 158;Acura;Legend;1988;19;21;9275;5396
 159;Mercury;Grand Marquis;2003;49;39;28967;1739
+16;GMC;Safari;1995;21;89;22909;870
 160;Dodge;D250;1992;3;51;21961;2697
 161;GMC;Sierra 3500;2003;50;96;7419;9591
 162;Volkswagen;New Beetle;2001;50;10;27811;7913
@@ -168,6 +78,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 167;Dodge;Caravan;2002;21;23;25150;8927
 168;Mercedes-Benz;G-Class;2007;86;70;23244;6215
 169;Chevrolet;Suburban 1500;2011;82;41;18925;4155
+17;Porsche;911;2011;8;82;12825;7616
 170;GMC;Acadia;2011;30;84;15484;5742
 171;Lexus;IS-F;2011;59;20;14438;1823
 172;Audi;200;1989;55;40;3249;7973
@@ -178,6 +89,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 177;Lexus;LS;1999;95;48;14071;9340
 178;BMW;X6 M;2012;46;21;24555;917
 179;Saturn;VUE;2005;75;36;2471;1556
+18;Mitsubishi;Eclipse;1999;73;1;11106;8814
 180;Suzuki;SJ 410;1984;66;2;2284;2047
 181;Hyundai;Elantra;2005;13;37;14654;2660
 182;GMC;Savana 3500;2003;84;86;29736;7995
@@ -188,6 +100,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 187;GMC;Safari;1994;48;21;5760;3542
 188;Dodge;Caravan;2008;24;74;25160;7072
 189;Mercedes-Benz;E-Class;1997;45;37;15609;4613
+19;Ford;F150;2010;28;3;19000;1560
 190;Mercury;Grand Marquis;1990;63;75;23758;7091
 191;Toyota;Yaris;2009;67;38;3999;3630
 192;Chevrolet;Camaro;1973;66;52;18212;6886
@@ -198,6 +111,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 197;Subaru;Brat;1985;15;69;14923;6592
 198;Panoz;Esperante;2008;100;86;8546;7276
 199;Mercury;Cougar;1991;83;98;4956;1888
+2;Mitsubishi;Endeavor;2006;46;72;24761;953
+20;Toyota;Land Cruiser;2001;77;48;28424;4645
 200;Honda;Odyssey;2000;33;88;5786;8398
 201;Lincoln;Town Car;2003;2;100;16729;1676
 202;GMC;Yukon XL 1500;2011;99;6;3793;5034
@@ -208,6 +123,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 207;Pontiac;Firebird;2001;19;30;13835;7774
 208;Toyota;4Runner;1999;66;16;27590;5396
 209;Mercedes-Benz;C-Class;1994;45;70;5938;2506
+21;Mazda;MX-5;2011;81;7;17769;4166
 210;BMW;5 Series;2007;95;50;1103;908
 211;Subaru;Legacy;1989;22;63;24558;2340
 212;Lincoln;MKS;2010;5;41;29348;9160
@@ -218,6 +134,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 217;Saab;900;1997;10;54;2159;3067
 218;Toyota;Corolla;1996;48;35;22263;8932
 219;Pontiac;6000;1989;89;3;5530;2345
+22;Ford;F-Series;1989;99;78;16830;5871
 220;Toyota;Tacoma;2007;49;88;4907;5796
 221;Nissan;Cube;2011;55;30;22294;7597
 222;Mercedes-Benz;E-Class;1991;53;36;23166;4931
@@ -228,6 +145,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 227;Infiniti;QX;1998;80;65;14881;7062
 228;Dodge;Challenger;2008;93;39;24461;1189
 229;Chevrolet;Astro;2005;9;68;14670;9210
+23;Mercedes-Benz;C-Class;2008;95;23;12215;7970
 230;Spyker;C8;2007;93;21;24121;5974
 231;Ford;Excursion;2000;80;79;28326;1154
 232;Buick;Roadmaster;1996;35;29;29313;1776
@@ -238,6 +156,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 237;Audi;A6;2001;79;78;12100;3410
 238;Cadillac;Seville;1997;45;20;18042;3727
 239;Jeep;Liberty;2011;58;34;1322;9166
+24;Nissan;Pathfinder;1992;72;30;6258;8932
 240;Kia;Forte;2012;2;17;2074;6215
 241;Mitsubishi;Challenger;2003;88;39;9270;1411
 242;Chevrolet;Equinox;2011;90;21;17137;4966
@@ -248,6 +167,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 247;Acura;TL;2011;31;89;21691;3652
 248;Dodge;Stealth;1994;81;22;4605;7467
 249;Porsche;Boxster;2004;24;53;8337;6787
+25;Cadillac;Escalade EXT;2005;73;97;10056;5464
 250;Chevrolet;Venture;1998;19;40;5557;3592
 251;Volkswagen;GTI;1993;46;32;9668;2154
 252;Chevrolet;Express 1500;2005;23;23;23404;5104
@@ -258,6 +178,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 257;Lexus;HS;2010;16;47;10694;9776
 258;Ford;Crown Victoria;1995;62;11;15205;9229
 259;Cadillac;DeVille;2004;88;94;20235;1982
+26;Toyota;FJ Cruiser;2010;76;96;24970;9423
 260;Buick;LeSabre;1986;18;44;26038;1007
 261;Volkswagen;GTI;2010;43;25;1635;2362
 262;Toyota;Paseo;1992;84;61;27565;7440
@@ -268,6 +189,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 267;Ford;Thunderbird;1958;21;48;25162;1355
 268;Mercury;Mountaineer;2001;39;74;18038;9201
 269;Lincoln;Navigator;2004;8;51;7150;974
+27;GMC;Yukon XL 1500;2001;28;83;10561;6784
 270;Nissan;Pathfinder;1998;63;75;22611;9543
 271;Infiniti;Q;1995;3;25;25726;5068
 272;Pontiac;Firebird;2001;56;2;15932;8201
@@ -278,6 +200,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 277;Ford;Mustang;1991;69;46;29697;5333
 278;Toyota;Camry;1994;9;22;15238;7881
 279;Saab;09-mar;2011;16;89;27912;2306
+28;Toyota;Tundra;2010;76;29;24680;8403
 280;Nissan;300ZX;1991;74;50;4683;1379
 281;Geo;Tracker;1997;3;48;24599;5353
 282;Pontiac;Grand Prix;1982;81;3;8064;939
@@ -288,6 +211,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 287;Chevrolet;Monte Carlo;1999;8;17;17031;4495
 288;Mercury;Grand Marquis;1992;34;31;9463;2616
 289;Pontiac;Firebird Formula;1999;49;3;9652;8958
+29;Audi;R8;2008;88;11;19923;9027
 290;Mercedes-Benz;E-Class;1990;35;32;16978;3935
 291;Chevrolet;Astro;1993;86;89;8979;4932
 292;Buick;LeSabre;1996;65;46;7198;3901
@@ -298,6 +222,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 297;Chevrolet;Monte Carlo;2006;10;63;9483;5185
 298;Porsche;Cayenne;2009;91;77;4094;6574
 299;Subaru;Forester;2003;55;13;4515;8464
+3;Chevrolet;TrailBlazer;2006;43;53;29194;7977
+30;Infiniti;J;1996;33;81;23460;8597
 300;Chevrolet;Caprice;1995;24;49;26166;5552
 301;Maserati;430;1990;80;75;21673;2726
 302;Pontiac;Bonneville;1986;11;39;5063;5085
@@ -308,6 +234,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 307;BMW;M5;2008;15;49;25764;1764
 308;Volvo;S40;2009;49;19;20288;9612
 309;Mitsubishi;Challenger;1998;92;80;20922;7248
+31;Pontiac;Grand Am;2003;30;94;27584;4235
 310;Chevrolet;Avalanche 1500;2005;10;4;17597;2656
 311;Mercedes-Benz;S-Class;1997;23;28;12009;4752
 312;Lexus;SC;2007;3;79;18281;1352
@@ -318,6 +245,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 317;Porsche;911;2008;30;98;1558;8609
 318;Hyundai;Genesis;2010;46;92;20497;4348
 319;Ford;F-Series;2010;74;83;16757;4848
+32;Chrysler;Town & Country;2001;18;71;18953;4031
 320;Mercury;Sable;2004;84;28;13499;7606
 321;Hyundai;Excel;1993;99;48;22655;9233
 322;Mitsubishi;Pajero;2004;72;29;22663;2590
@@ -328,6 +256,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 327;Nissan;Versa;2009;5;34;14253;1880
 328;Mercury;Grand Marquis;2001;14;77;4393;1503
 329;Ford;Festiva;1991;77;75;23924;7153
+33;Cadillac;Escalade ESV;2010;1;5;11692;3292
 330;Nissan;Sentra;2009;3;9;16391;7345
 331;Mitsubishi;Pajero;1998;41;12;2847;5913
 332;GMC;Jimmy;2000;35;69;9266;6114
@@ -338,6 +267,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 337;Ford;Flex;2013;60;65;7912;2339
 338;Hyundai;Entourage;2008;15;88;1094;2147
 339;Lamborghini;Diablo;1993;66;56;14624;1986
+34;Dodge;Dakota;2004;74;3;3312;5475
 340;Mazda;323;1993;11;80;18971;9645
 341;Ford;Taurus;1986;41;75;18574;3275
 342;Ford;Focus;2009;75;74;10794;6439
@@ -348,6 +278,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 347;Lexus;SC;1993;57;46;25849;7316
 348;BMW;Alpina B7;2007;16;12;22888;3818
 349;Mazda;Protege5;2002;78;86;18542;9331
+35;Chevrolet;G-Series 2500;1998;41;18;25831;4503
 350;Cadillac;Seville;1992;34;93;26933;8112
 351;GMC;Vandura 3500;1993;61;41;16048;9547
 352;GMC;Yukon XL 1500;2003;82;70;13240;762
@@ -358,6 +289,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 357;Toyota;Tacoma;2006;76;54;16473;9646
 358;Cadillac;Escalade EXT;2011;75;47;14092;9137
 359;Toyota;FJ Cruiser;2007;63;75;1877;3460
+36;Nissan;Pathfinder;2008;8;8;20283;7472
 360;GMC;Savana 2500;2001;89;74;23016;7497
 361;Land Rover;Freelander;2002;18;16;9144;4970
 362;Lotus;Exige;2008;3;90;12384;1729
@@ -368,6 +300,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 367;Audi;Cabriolet;1995;46;67;12178;2415
 368;Mitsubishi;L300;1988;1;19;15458;5200
 369;Ford;Mustang;1970;84;26;9929;3300
+37;GMC;Vandura 1500;1994;22;21;22603;3923
 370;Chrysler;Voyager;2002;5;74;28528;1792
 371;Ford;EXP;1985;48;31;4371;9240
 372;Mercedes-Benz;SLK-Class;2004;56;17;1305;3977
@@ -378,6 +311,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 377;Mercedes-Benz;CLK-Class;1998;51;86;1196;2251
 378;Mercury;Mountaineer;2006;24;35;11902;7754
 379;BMW;M6;2007;100;9;9554;5298
+38;Lotus;Elan;1993;73;79;11231;1880
 380;Toyota;Corolla;1998;4;78;14823;5810
 381;Suzuki;Verona;2004;87;59;23180;9832
 382;Land Rover;Range Rover;2011;71;74;22598;969
@@ -388,6 +322,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 387;Honda;Pilot;2011;9;54;22015;2705
 388;Chevrolet;Silverado 2500;2012;13;7;8925;3997
 389;Chevrolet;Express 2500;1997;25;98;26068;3802
+39;GMC;Sierra 2500;2008;37;14;9620;3557
 390;Lexus;GS;2003;86;27;23504;8448
 391;GMC;Savana 1500;1999;73;41;10034;3827
 392;Land Rover;Range Rover;2010;49;10;28095;8221
@@ -398,6 +333,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 397;Dodge;Ram Wagon B250;1994;19;75;21940;3138
 398;Toyota;Matrix;2012;52;5;3418;3293
 399;BMW;7 Series;2003;13;80;6121;8556
+4;Nissan;350Z;2004;50;73;25778;3011
+40;Ford;F250;2007;7;59;12387;8684
 400;Lincoln;Town Car;2001;48;30;22750;8581
 401;Audi;S6;2010;3;99;2121;8385
 402;GMC;Yukon;2008;78;34;14067;5723
@@ -408,6 +345,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 407;Infiniti;Q;1994;92;10;7387;854
 408;Studebaker;Avanti;1964;42;30;8573;2234
 409;Chevrolet;Silverado 3500;2002;66;10;2304;1164
+41;Toyota;Corolla;2004;80;66;20963;5862
 410;Toyota;Avalon;2000;22;29;23024;9971
 411;Dodge;Ram 1500 Club;2000;80;96;21847;6285
 412;Chrysler;Concorde;1997;70;35;22638;8400
@@ -418,6 +356,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 417;Mercury;Mariner;2011;45;11;26915;7496
 418;Mercedes-Benz;E-Class;2000;72;94;4088;1658
 419;Saturn;Relay;2006;12;21;14629;9157
+42;Mazda;Mazda5;2008;67;90;18701;4439
 420;Hyundai;Sonata;2002;94;61;13970;7270
 421;Pontiac;Tempest;1965;75;12;4805;7641
 422;Chevrolet;3500;1992;23;35;14268;8339
@@ -428,6 +367,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 427;Infiniti;G;1996;24;81;28178;5364
 428;Saturn;L-Series;2005;46;73;20577;8414
 429;Acura;TL;1999;4;50;8180;3511
+43;Mercedes-Benz;SL-Class;2000;58;57;9554;8715
 430;Pontiac;Grand Prix;1987;18;79;20863;6785
 431;Mercury;Monterey;2005;3;91;27280;8099
 432;Mitsubishi;Diamante;2005;33;16;12281;7553
@@ -438,6 +378,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 437;Chrysler;Concorde;1998;71;71;21605;1605
 438;Dodge;Ram Van 2500;1998;84;44;3776;4851
 439;Chevrolet;2500;2000;73;100;6991;1949
+44;Bentley;Continental GT;2008;25;45;6182;888
 440;Pontiac;Grand Prix;2002;37;88;7270;2510
 441;Mercedes-Benz;C-Class;2000;71;56;4278;4771
 442;Chevrolet;Camaro;2010;1;28;10584;5087
@@ -448,6 +389,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 447;Toyota;Sienna;2000;94;3;14534;3186
 448;Ford;Escort;1996;98;58;11987;9372
 449;Jeep;Patriot;2012;3;52;5254;1658
+45;Mercury;Villager;1998;89;56;24391;2161
 450;Ford;F-Series;1986;93;48;23424;7407
 451;Lincoln;Town Car;2006;70;90;18234;8101
 452;Subaru;Legacy;2008;61;12;13514;4529
@@ -458,6 +400,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 457;Chevrolet;Beretta;1993;73;88;21159;1737
 458;Nissan;Altima;2008;42;94;12925;8409
 459;Lincoln;MKS;2009;77;36;22342;703
+46;Porsche;928;1990;24;89;17628;7834
 460;Ford;F250;2004;7;5;22714;7509
 461;Honda;CR-X;1985;84;21;1041;9315
 462;GMC;Vandura G3500;1995;35;37;13172;1932
@@ -468,6 +411,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 467;Land Rover;Discovery;1998;19;45;23344;2209
 468;Isuzu;VehiCROSS;2000;75;6;23932;8052
 469;Toyota;Supra;1994;25;59;25485;754
+47;Plymouth;Breeze;2000;53;26;26191;8038
 470;Land Rover;Defender;1993;31;46;8008;9741
 471;Lexus;LS;1999;92;68;13523;7655
 472;GMC;Yukon XL 1500;2010;80;79;27024;3033
@@ -478,6 +422,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 477;Mercury;Tracer;1993;6;19;16268;5467
 478;Acura;RL;1999;31;30;27543;4926
 479;Hyundai;Elantra;1992;57;90;25848;9759
+48;Infiniti;FX;2010;34;65;23782;1463
 480;Dodge;Dakota Club;2004;35;84;11538;3123
 481;Mazda;626;1998;59;51;11289;1288
 482;Suzuki;Swift;1995;63;84;23634;6126
@@ -488,6 +433,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 487;GMC;Sonoma Club Coupe;1994;22;52;2555;4403
 488;Dodge;Ram 1500 Club;1997;16;13;24842;2221
 489;Oldsmobile;LSS;1999;36;44;12661;4238
+49;Acura;RL;1997;16;66;9297;977
 490;Bentley;Continental GT;2006;70;45;16394;9469
 491;Toyota;Xtra;1995;52;80;7998;3770
 492;Ford;Expedition;2001;64;30;12199;8087
@@ -498,6 +444,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 497;GMC;Yukon XL 1500;2008;51;41;28069;4021
 498;Isuzu;Rodeo;2002;70;61;1583;8191
 499;Pontiac;G6;2006;100;98;12159;7832
+5;Ford;Taurus X;2008;76;7;29579;8231
+50;Hyundai;Genesis;2012;60;66;20449;6978
 500;Ford;Bronco;1985;62;99;14941;9105
 501;Toyota;Prius;2011;72;7;9378;2586
 502;Volkswagen;Passat;2002;42;59;25304;6401
@@ -508,6 +456,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 507;Volkswagen;Jetta;1996;93;93;13366;9792
 508;Lexus;ES;2002;97;28;14095;8978
 509;Bentley;Azure;2007;67;90;19222;5540
+51;GMC;Canyon;2010;46;63;18395;2820
 510;Toyota;Tacoma Xtra;1998;5;87;3665;3481
 511;BMW;7 Series;2007;83;84;2052;7825
 512;Eagle;Premier;1992;33;8;11210;2499
@@ -518,6 +467,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 517;Pontiac;Tempest;1961;69;87;22457;1809
 518;Cadillac;STS-V;2008;82;5;21005;8962
 519;Acura;RL;2007;92;55;13040;8320
+52;Honda;FCX Clarity;2012;97;5;17522;4713
 520;Mercury;Grand Marquis;1990;54;23;22091;9847
 521;Toyota;Highlander Hybrid;2007;13;8;29314;2339
 522;Mitsubishi;Lancer Evolution;2005;32;98;13684;6561
@@ -528,6 +478,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 527;Pontiac;Firebird;1969;30;5;5878;8578
 528;Subaru;Tribeca;2006;48;92;29666;1347
 529;Audi;A6;2009;35;19;6876;3393
+53;Kia;Sportage;2012;87;19;12969;5688
 530;Oldsmobile;Regency;1998;76;80;18154;2314
 531;Mercury;Mystique;2000;58;96;12618;7833
 532;Volkswagen;Routan;2009;45;56;20891;6269
@@ -538,6 +489,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 537;BMW;600;1959;68;44;22820;3879
 538;Hyundai;XG350;2003;25;6;28733;1484
 539;Mazda;626;2002;55;5;7070;7363
+54;Ford;Escort;1984;6;96;27995;1423
 540;Ford;Flex;2012;24;37;13171;1841
 541;Mitsubishi;Outlander;2004;47;79;3913;9697
 542;Dodge;Ram 2500;2000;76;2;16521;1912
@@ -548,6 +500,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 547;Toyota;Highlander Hybrid;2007;14;56;10433;9848
 548;Suzuki;Swift;2005;67;20;2975;6807
 549;Buick;Regal;1995;74;28;17393;6213
+55;Chevrolet;Tahoe;2004;88;37;22241;1332
 550;Studebaker;Avanti;1962;77;29;13623;8456
 551;Mitsubishi;Mighty Max;1994;30;80;21800;9735
 552;Nissan;Versa;2011;41;44;20324;7605
@@ -558,6 +511,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 557;Infiniti;Q;1993;22;67;11102;9912
 558;Lexus;SC;2005;49;14;3657;5462
 559;Acura;RL;1998;100;15;13765;841
+56;Land Rover;Discovery Series II;2002;91;27;20322;4227
 560;Oldsmobile;Silhouette;1994;94;98;26506;2972
 561;Dodge;Dakota;1998;72;64;29662;7012
 562;Chevrolet;Corvette;1958;90;41;6614;6244
@@ -568,6 +522,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 567;GMC;Sonoma;1994;2;93;12801;8142
 568;Chevrolet;Cruze;2011;89;74;13912;8802
 569;Lexus;RX;2012;79;38;15515;2832
+57;Ford;Courier;1989;58;79;29764;5336
 570;Audi;A4;1996;47;55;14199;4146
 571;Infiniti;QX;2004;9;73;17292;919
 572;Pontiac;Grand Prix;2005;43;76;3416;9374
@@ -578,6 +533,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 577;Mitsubishi;Pajero;1986;17;89;11356;9776
 578;Mitsubishi;Lancer;2007;91;48;12480;7081
 579;Ford;Escape;2003;33;14;15167;6775
+58;Chevrolet;G-Series G10;1993;72;64;13503;5046
 580;GMC;1500;1994;91;87;18325;8472
 581;Audi;A4;2002;56;34;25244;5263
 582;Volkswagen;Passat;1992;3;36;20972;4487
@@ -588,6 +544,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 587;Chevrolet;Equinox;2007;44;65;2717;7318
 588;Ford;Escort ZX2;2003;57;89;24921;7114
 589;Chevrolet;Avalanche 2500;2004;93;29;2131;7719
+59;BMW;7 Series;2000;78;21;14517;761
 590;Chevrolet;SSR;2006;36;68;22707;2281
 591;Lamborghini;Murci�lago;2008;79;45;23477;3598
 592;Isuzu;VehiCROSS;2001;26;21;7032;5329
@@ -598,6 +555,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 597;Nissan;GT-R;2009;41;68;11159;3176
 598;Acura;TL;2003;9;74;7474;8789
 599;Mitsubishi;Eclipse;1989;17;52;16250;7185
+6;Ford;Explorer;2011;44;5;25043;6727
+60;Scion;xA;2006;55;97;2804;3103
 600;Dodge;Intrepid;1998;100;52;11511;3680
 601;Honda;Odyssey;2006;81;9;21803;3678
 602;GMC;Yukon;2012;56;14;12959;2619
@@ -608,6 +567,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 607;MINI;Countryman;2012;5;50;20017;4863
 608;Mercedes-Benz;C-Class;2004;11;13;15773;8001
 609;Pontiac;Bonneville;1966;47;7;4915;2603
+61;Pontiac;Firebird;1989;46;80;10481;6633
 610;Mercury;Villager;1999;25;53;25255;4229
 611;Ford;Bronco;1991;75;56;2376;5990
 612;Chevrolet;Avalanche;2002;25;38;18833;7250
@@ -618,6 +578,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 617;Chevrolet;Impala;2004;90;19;14088;8984
 618;Oldsmobile;Cutlass Supreme;1995;47;99;18849;3166
 619;Nissan;Altima;1998;14;18;25089;7099
+62;Chevrolet;Camaro;1979;3;97;2769;9048
 620;Volkswagen;Jetta;1992;29;66;10139;2678
 621;Dodge;Charger;2009;19;57;22733;8834
 622;Jeep;Grand Cherokee;1998;54;58;11023;8757
@@ -628,6 +589,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 627;Jeep;Cherokee;1997;18;10;14566;7374
 628;Mazda;Mazda6;2005;20;33;20045;7413
 629;Jaguar;S-Type;2002;93;25;15598;7557
+63;Toyota;Celica;2004;84;18;22859;9284
 630;Jeep;Grand Cherokee;1999;79;95;13553;819
 631;Lamborghini;Diablo;1996;89;64;8783;2157
 632;Mercedes-Benz;E-Class;1986;60;46;13663;9971
@@ -638,6 +600,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 637;Chevrolet;Cavalier;1998;68;91;26692;1075
 638;Lamborghini;Countach;1987;5;30;13216;5134
 639;Peugeot;207;2007;22;55;12594;5447
+64;Chevrolet;Corsica;1992;98;29;9821;4274
 640;BMW;Z8;2001;89;69;27572;5112
 641;Audi;A6;2005;22;65;23978;1112
 642;Mitsubishi;Montero Sport;1997;90;34;23686;4611
@@ -648,6 +611,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 647;Ford;Contour;1997;98;61;5065;5221
 648;Oldsmobile;88;1996;46;15;28510;5069
 649;Volkswagen;Phaeton;2006;6;87;13972;5575
+65;Mercedes-Benz;E-Class;2002;36;33;3433;6724
 650;Mercedes-Benz;SL-Class;2009;57;90;23353;6357
 651;Chevrolet;Corvette;2001;83;73;26483;4203
 652;Ford;Escape;2005;67;12;14793;6396
@@ -658,6 +622,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 657;Buick;Skylark;1988;66;10;14580;9725
 658;Toyota;Tacoma Xtra;2002;27;13;2176;2146
 659;Chevrolet;HHR;2010;59;68;5348;8432
+66;Mercury;Mystique;1997;76;92;17085;8155
 660;Mercedes-Benz;GLK-Class;2012;74;66;25343;3511
 661;Land Rover;Defender 110;1993;33;23;28391;8020
 662;Ford;F-Series;2001;78;88;7193;9639
@@ -668,6 +633,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 667;Ford;Aerostar;1989;17;43;9073;9002
 668;Toyota;Echo;2001;42;28;6581;8441
 669;Maserati;430;1991;2;52;4890;4796
+67;Lexus;SC;2007;21;9;9134;9326
 670;Pontiac;Bonneville;1994;72;37;26949;5498
 671;Chevrolet;Lumina;1993;89;37;1426;7448
 672;Dodge;Intrepid;1999;60;61;27584;3349
@@ -678,6 +644,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 677;Buick;Riviera;1987;90;14;15037;4737
 678;Mitsubishi;Lancer;2012;54;95;6097;6590
 679;Land Rover;Discovery;2001;48;1;14167;1597
+68;Mazda;Mazda6;2008;97;28;16451;4651
 680;Buick;Lucerne;2006;25;24;10400;5881
 681;Volvo;S60;2011;85;82;16697;3944
 682;Chrysler;New Yorker;1993;47;89;20821;2272
@@ -688,6 +655,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 687;Mitsubishi;Truck;1995;9;10;6135;2994
 688;Aston Martin;Vantage;2009;88;21;29647;4772
 689;Mitsubishi;Galant;2004;16;20;19689;5458
+69;Lincoln;Continental;1996;61;2;6422;2639
 690;Volkswagen;Touareg 2;2009;51;3;24609;8260
 691;Lexus;GS;1996;33;71;26350;7404
 692;Suzuki;Sidekick;1998;77;92;6432;2618
@@ -698,6 +666,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 697;Mitsubishi;Mirage;1994;26;67;6568;1792
 698;GMC;Vandura G3500;1996;100;27;11176;1046
 699;Nissan;Frontier;2008;59;69;26582;4496
+7;Honda;S2000;2002;65;28;6394;3036
+70;Ford;Club Wagon;1995;3;36;4198;6134
 700;Chevrolet;Beretta;1994;11;29;12670;8872
 701;Chrysler;LeBaron;1992;33;45;19456;8997
 702;Lincoln;Navigator;2006;47;94;22545;3413
@@ -708,6 +678,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 707;Lexus;RX;1999;6;10;20170;2653
 708;GMC;2500 Club Coupe;1994;81;57;21132;3836
 709;Acura;TL;2010;22;92;10109;3382
+71;Audi;A6;2008;22;82;6004;1130
 710;Mitsubishi;Pajero;1996;48;23;26066;4789
 711;Toyota;Matrix;2011;37;85;24687;5723
 712;Cadillac;Eldorado;1995;17;20;27630;3706
@@ -718,6 +689,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 717;Buick;Park Avenue;1995;19;7;21655;8188
 718;Saturn;Outlook;2008;95;12;14392;4138
 719;Kia;Optima;2005;19;22;29626;2902
+72;Infiniti;QX56;2011;69;69;19330;8097
 720;Ford;Mustang;2002;44;92;9609;8305
 721;Chevrolet;Equinox;2012;71;49;22245;7998
 722;Ford;Crown Victoria;2003;90;45;24338;1273
@@ -728,6 +700,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 727;Tesla;Roadster;2010;86;86;25050;3419
 728;Kia;Sportage;2005;47;64;12684;3671
 729;Mitsubishi;Pajero;1990;90;32;5678;7275
+73;Ford;Aerostar;1990;19;8;22489;6846
 730;Mercedes-Benz;E-Class;1988;30;62;27614;5927
 731;Buick;Riviera;1989;87;53;2108;7894
 732;GMC;Yukon;2004;63;39;8718;5622
@@ -738,6 +711,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 737;Hyundai;Santa Fe;2010;81;20;7561;2946
 738;Chevrolet;Camaro;1998;98;79;27506;5225
 739;Lamborghini;Gallardo;2010;77;99;28829;8902
+74;Volvo;S80;2009;2;67;28680;4444
 740;Mercedes-Benz;300TE;1992;21;91;28116;2011
 741;Hyundai;Tiburon;2006;65;15;2955;6206
 742;Ford;F350;2001;14;88;5141;3065
@@ -748,6 +722,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 747;MINI;MINI;2002;36;51;3575;6038
 748;Mitsubishi;Eclipse;2008;40;69;4258;7792
 749;Mazda;626;1994;27;82;6606;3358
+75;Buick;Coachbuilder;1990;18;68;26586;1664
 750;Jaguar;XK;2007;48;69;17719;2365
 751;Maserati;Karif;1990;19;57;17423;6145
 752;Land Rover;Discovery;1999;32;38;3206;8531
@@ -758,6 +733,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 757;Suzuki;Aerio;2006;20;16;28530;9714
 758;Chevrolet;Monte Carlo;2005;15;54;26259;7342
 759;Cadillac;Seville;2004;90;50;12121;2655
+76;Chevrolet;Corvette;1967;22;38;13420;6741
 760;Volkswagen;Jetta;1991;66;91;1768;9078
 761;Honda;Accord;2001;5;2;6843;8738
 762;Dodge;Nitro;2011;12;96;17887;5621
@@ -768,6 +744,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 767;Volkswagen;Jetta;1993;33;89;17193;5113
 768;Volvo;960;1994;92;10;18057;5685
 769;Ford;Torino;1970;33;51;20693;6136
+77;Porsche;911;1992;84;77;9549;8799
 770;Oldsmobile;Silhouette;2000;48;72;11650;4244
 771;Audi;5000S;1985;7;30;10639;9484
 772;Hyundai;Sonata;2013;44;84;24532;3737
@@ -778,6 +755,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 777;Mitsubishi;3000GT;1999;21;41;19569;1793
 778;Nissan;Altima;2009;65;32;20642;7123
 779;Volkswagen;R32;2009;37;99;7334;1806
+78;Toyota;Tacoma Xtra;2004;37;73;28559;4533
 780;BMW;6 Series;2007;85;12;27534;3740
 781;Chevrolet;Uplander;2008;93;18;14923;3949
 782;Chevrolet;Impala;2009;83;65;8488;5512
@@ -788,6 +766,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 787;Toyota;Land Cruiser;1999;29;57;27938;3590
 788;Lincoln;Mark VIII;1993;27;43;8940;2827
 789;Ford;F250;2000;94;94;21557;8352
+79;Kia;Optima;2006;99;44;11007;2587
 790;Mercedes-Benz;C-Class;2003;42;54;8559;9880
 791;Honda;Ridgeline;2011;70;50;2449;803
 792;Porsche;Panamera;2013;97;87;1896;5710
@@ -798,6 +777,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 797;Chevrolet;Astro;1996;38;44;16773;5622
 798;Chevrolet;Camaro;1992;48;62;20757;6580
 799;Pontiac;Trans Sport;1994;94;52;9744;2786
+8;Scion;xD;2011;8;75;2184;7279
+80;Maserati;Quattroporte;1984;8;79;4073;964
 800;Subaru;Legacy;2002;78;47;8102;4252
 801;GMC;Sierra 2500;1999;61;8;22639;6075
 802;Jeep;Commander;2006;73;6;2736;9004
@@ -808,6 +789,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 807;Mercury;Mariner;2007;9;5;27062;2026
 808;Pontiac;LeMans;1990;8;63;4002;7282
 809;Chevrolet;Corvette;1972;32;5;10160;1707
+81;Subaru;Legacy;1993;89;81;18293;8043
 810;Audi;A8;2007;77;59;3249;5049
 811;Ford;Econoline E350;2000;58;55;16916;3633
 812;Toyota;Paseo;1994;10;32;19007;6839
@@ -818,6 +800,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 817;Subaru;SVX;1997;66;31;18415;7573
 818;Acura;Integra;1992;8;68;13714;4422
 819;Pontiac;1000;1984;70;73;21248;8433
+82;Chrysler;Town & Country;1996;74;63;9725;5570
 820;Pontiac;6000;1990;8;27;3414;4123
 821;Nissan;350Z;2006;28;11;2701;8907
 822;Land Rover;Range Rover Classic;1993;1;99;13080;3433
@@ -828,6 +811,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 827;Oldsmobile;Silhouette;1994;62;42;14164;9052
 828;Mercury;Montego;2005;34;85;4551;8539
 829;BMW;5 Series;2007;94;47;7996;2457
+83;Toyota;Sequoia;2006;20;72;19106;6873
 830;Porsche;Cayman;2011;9;9;11393;7241
 831;Hyundai;Elantra;2006;15;68;17134;6385
 832;Saab;09-may;2001;54;34;14580;706
@@ -838,6 +822,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 837;Honda;Prelude;1986;13;18;28365;877
 838;Dodge;Ram 3500;2002;13;93;19982;7812
 839;Toyota;Land Cruiser;1992;93;82;9002;2468
+84;Infiniti;G;2002;66;36;14058;3938
 840;Geo;Metro;1992;70;4;28177;4304
 841;Bentley;Arnage;2009;52;94;1117;5131
 842;Pontiac;Grand Am;1997;59;49;18909;6427
@@ -848,6 +833,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 847;Dodge;Charger;2007;96;62;10558;2064
 848;Toyota;4Runner;1999;92;96;5894;3925
 849;Scion;xB;2008;15;98;8601;6398
+85;Lotus;Elise;2008;10;54;5901;8297
 850;Mitsubishi;Mirage;1995;97;39;9438;5941
 851;Pontiac;Bonneville;1987;59;60;25866;2470
 852;Suzuki;SJ;1985;40;53;17544;5737
@@ -858,6 +844,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 857;Ford;Thunderbird;1994;76;30;3163;4091
 858;Mercedes-Benz;E-Class;2003;75;35;12710;4329
 859;Infiniti;Q;2004;9;50;29283;7865
+86;Ram;C/V;2012;39;28;17650;9749
 860;Lincoln;Continental;1995;38;25;11522;8587
 861;Ford;Fairlane;1967;82;54;12320;9156
 862;Jaguar;S-Type;2003;17;7;3337;4147
@@ -868,6 +855,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 867;Infiniti;Q;2003;99;55;9838;6661
 868;Mitsubishi;Outlander;2010;42;46;12508;4644
 869;Toyota;Corolla;1999;15;77;26999;2026
+87;Scion;xD;2008;70;29;14712;5961
 870;Ford;Aerostar;1991;23;96;23683;9464
 871;Infiniti;G;2003;53;99;6160;3378
 872;Ford;Thunderbird;1972;66;18;12250;1343
@@ -878,6 +866,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 877;Buick;LeSabre;2004;51;9;2695;8996
 878;Toyota;Sienna;2004;18;8;6504;9379
 879;Land Rover;Defender 90;1997;51;45;9892;2315
+88;Corbin;Sparrow;1999;100;67;11119;5090
 880;Ford;Mustang;1971;9;23;17227;3895
 881;Dodge;Dakota Club;2003;70;19;19195;4974
 882;Ford;F350;2011;53;29;28394;7558
@@ -888,6 +877,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 887;Aston Martin;DBS;2011;90;34;23278;4884
 888;Plymouth;Laser;1994;99;26;19292;3184
 889;Nissan;Altima;2002;19;34;21329;1239
+89;Chevrolet;Cobalt;2008;36;91;17559;5976
 890;Lincoln;Continental;1999;81;72;8886;7236
 891;Ford;Ranger;1995;54;13;23741;4448
 892;Ford;Escort;2002;50;19;18879;7714
@@ -898,6 +888,8 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 897;GMC;Yukon XL 1500;2010;96;93;14225;7676
 898;Volvo;850;1995;27;65;4674;7727
 899;Dodge;Ram 2500;1995;4;83;7103;3745
+9;Jaguar;S-Type;2002;20;65;25422;6835
+90;Pontiac;Sunbird;1984;4;86;12042;2307
 900;Saab;09-mar;2007;88;50;27621;6229
 901;Infiniti;EX;2008;74;89;7157;2555
 902;Lotus;Esprit;1985;97;12;26086;9919
@@ -908,6 +900,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 907;Chevrolet;Corvette;1956;74;91;21194;2568
 908;Dodge;Caravan;1994;68;28;16874;1816
 909;Suzuki;SJ 410;1984;83;38;3176;6500
+91;Chrysler;Town & Country;2008;36;62;27883;1488
 910;Toyota;4Runner;1996;67;25;1308;7121
 911;Mazda;626;1985;27;25;11162;6437
 912;Lexus;SC;1997;8;86;4561;1976
@@ -918,6 +911,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 917;Austin;Mini Cooper S;1963;42;65;9393;1126
 918;Volvo;XC70;2008;91;40;10398;2799
 919;Spyker;C8 Laviolette;2004;86;37;29602;6880
+92;Mitsubishi;Galant;1987;72;5;16063;6267
 920;Mazda;MPV;2002;11;93;27149;8833
 921;Chrysler;Sebring;2001;81;92;10936;1093
 922;Honda;Passport;1996;61;78;3411;7113
@@ -928,6 +922,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 927;Honda;CR-Z;2012;57;3;20019;9375
 928;Audi;A4;2005;4;92;21994;1729
 929;Dodge;Ram Van 2500;2003;16;94;5691;2668
+93;Dodge;Intrepid;1995;99;38;27196;6253
 930;Jaguar;XK Series;1999;80;62;2971;3086
 931;Acura;TSX;2004;94;66;27291;1991
 932;Subaru;Brat;1986;25;82;16890;7042
@@ -938,6 +933,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 937;Lotus;Esprit;1987;69;34;12760;5044
 938;Dodge;Viper;1999;6;6;13940;952
 939;Toyota;Camry;2000;59;62;11850;8980
+94;Audi;A6;2010;56;16;16543;4520
 940;Suzuki;Swift;2001;73;71;6723;9689
 941;Hyundai;Accent;2000;63;95;2088;4242
 942;Hyundai;Santa Fe;2010;31;7;20018;2378
@@ -948,6 +944,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 947;Chrysler;Town & Country;1997;30;41;21235;9859
 948;Ford;Mustang;1989;55;92;15038;6199
 949;Volkswagen;Jetta;1996;10;3;18092;8363
+95;Land Rover;Range Rover;1999;49;77;21431;8239
 950;BMW;8 Series;1995;35;20;17051;7182
 951;Toyota;Highlander;2010;80;33;5447;8076
 952;BMW;M3;2004;66;7;7546;6155
@@ -958,6 +955,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 957;Ford;E350;2005;24;45;3873;8664
 958;GMC;Savana Cargo Van;2006;35;23;29290;2810
 959;Chrysler;300M;2001;94;66;9647;5945
+96;Ford;Windstar;1996;66;100;13394;2729
 960;Hummer;H2;2003;65;53;15472;5770
 961;Jaguar;XJ;2010;81;12;26437;3951
 962;Lamborghini;Diablo;1998;11;10;26804;6389
@@ -968,6 +966,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 967;Mitsubishi;Precis;1986;82;41;6885;2200
 968;Toyota;MR2;2001;82;96;23367;6231
 969;GMC;Acadia;2012;40;43;3184;6016
+97;Cadillac;SRX;2012;92;22;21015;3333
 970;Suzuki;Esteem;2001;25;46;26196;9893
 971;Chevrolet;Cavalier;2002;15;97;8875;1682
 972;Chevrolet;Silverado 1500;2006;30;14;22498;9554
@@ -978,6 +977,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 977;Mercedes-Benz;R-Class;2008;87;77;28931;4595
 978;Jaguar;S-Type;2004;42;24;6189;4723
 979;Toyota;Prius;2001;58;89;22834;7960
+98;Ford;Thunderbird;1995;61;84;1496;3936
 980;Honda;Civic;1995;65;57;4594;9390
 981;Volkswagen;Eos;2012;40;51;27911;2899
 982;Mitsubishi;Truck;1988;19;76;22001;969
@@ -988,6 +988,7 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 987;Volvo;S80;2011;21;65;18426;4648
 988;Oldsmobile;Achieva;1997;41;24;8077;887
 989;Toyota;Echo;2000;21;84;20809;2458
+99;Audi;S5;2011;8;67;22009;7299
 990;Pontiac;Bonneville;1965;7;82;8328;8193
 991;Oldsmobile;Aurora;2003;95;27;22582;5610
 992;Volkswagen;CC;2010;22;39;28042;6596
@@ -998,4 +999,4 @@ id; maker; model; year; sold_to; bought_to; sold_for; bought_for
 997;Ford;GT;2006;98;85;10960;6967
 998;Dodge;Daytona;1984;53;90;23494;6996
 999;Buick;Riviera;1986;70;7;29270;1168
-1000;Mitsubishi;Truck;1991;83;91;23170;3700
+1000;toyota;corola;2006;0;0;0;1596

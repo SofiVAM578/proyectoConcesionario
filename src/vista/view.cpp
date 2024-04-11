@@ -255,7 +255,7 @@ void sinverder(string filename){
 				getline(ss, comprado, ';');
 				int current_comprado = stoi(comprado);
 
-				if (current_vendido = 0) {
+				if (current_vendido == 0) {
 				autos_sinvender++;
 				cout << " \n ______________________________________________________ \n" << endl;
 				cout << " ID____________________ " << current_id << endl;
@@ -537,9 +537,9 @@ void cliente_vendedor_Xauto(string filename_Cliente, string filename_Auto){
 
             ifstream file_cliente(filename_Cliente);
    getline(file_cliente, line2);
+   cout << " VENDEDOR DEL AUTO " <<endl;
    while (getline(file_cliente, line2)) {
     stringstream ss(line2);
-   cout << " VENDEDOR DEL AUTO " <<endl;
    getline(ss, id, ';');
    int current_id = stoi(id);
     getline(ss, nombre, ';');
@@ -562,10 +562,10 @@ void cliente_vendedor_Xauto(string filename_Cliente, string filename_Auto){
 
    ifstream file_cliente1(filename_Cliente);
    getline(file_cliente1, line3);
+   cout << " COMPRADOR DEL AUTO " <<endl;
    while (getline(file_cliente1, line3)) {
     stringstream ss(line3);
 
-   cout << " COMPRADOR DEL AUTO " <<endl;
    getline(ss, id, ';');
    int current_id = stoi(id);
     getline(ss, nombre, ';');
